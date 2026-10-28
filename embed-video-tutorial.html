@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Embed a YouTube Video on Your Website</title>
+    <link rel="stylesheet" href="embed.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>How to Embed a YouTube Video on Your Website</h1>
+            <p>A simple step-by-step tutorial</p>
+        </header>
+
+        <p>This tutorial shows how to embed a service-hosted video (a YouTube video from CNN) into your own web page. Each step includes a screenshot of where the action takes place.</p>
+
+        <div class="step">
+            <h2><span class="step-number">Step 1</span> Open the video on YouTube</h2>
+            <p>Go to <strong>youtube.com</strong> and search for a video. For this example we use a CNN video ("NASA's newest 'discovery machine'"). Click the video to open its watch page.</p>
+            <img class="screenshot" src="images/step1.png" alt="Step 1: YouTube video page with Share button">
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">Step 2</span> Click the Share button</h2>
+            <p>Below the video, click the <strong>Share</strong> button. A share menu will pop up with several options, including Embed.</p>
+            <img class="screenshot" src="images/step2.png" alt="Step 2: Share menu open">
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">Step 3</span> Click Embed</h2>
+            <p>In the share menu, click <strong>Embed</strong>. A box appears showing the embed code (an &lt;iframe&gt;) and a Copy button.</p>
+            <img class="screenshot" src="images/step3.png" alt="Step 3: Embed dialog with iframe code">
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">Step 4</span> Copy the embed code</h2>
+            <p>Click <strong>Copy</strong> to copy the &lt;iframe&gt; code to your clipboard. You can also select and copy it manually.</p>
+            <img class="screenshot" src="images/step4.png" alt="Step 4: Embed code textarea">
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">Step 5</span> Paste the code into your HTML file</h2>
+            <p>Open your HTML file in a text editor and paste the embed code where you want the video to appear on the page. Save the file.</p>
+            <pre class="code-block">&lt;iframe width="560" height="315"
+    src="https://www.youtube.com/embed/GOCRs9omW1U"
+    title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+            <img class="screenshot" src="images/step5.png" alt="Step 5: Pasting embed code into HTML">
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">Step 6</span> Open the page in a browser</h2>
+            <p>Open your saved HTML file in a web browser. The video should now be embedded and playable on your page.</p>
+            <img class="screenshot" src="images/step6.png" alt="Step 6: Embedded video visible in browser">
+        </div>
+
+        <h2>Example Embedded Video</h2>
+        <p>Below is the CNN video embedded using the steps above:</p>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GOCRs9omW1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            <p>Tutorial: Embedding a service-hosted video (YouTube) into a web page.</p>
+        </footer>
+    </div>
+</body>
+</html>
