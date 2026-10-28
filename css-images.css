@@ -1,0 +1,136 @@
+/* CSS3 Image Effects Assignment Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+.effect-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.effect-card h2 {
+    color: #333;
+    margin-top: 0;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    margin: 15px 0;
+}
+
+/* 1. Butterfly - Sepia with drop shadow */
+.butterfly {
+    filter: sepia(80%) contrast(110%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    border: 3px solid #8B4513;
+}
+
+/* 2. Dinosaur - Grayscale with strong drop shadow */
+.dinosaur {
+    filter: grayscale(100%);
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.7);
+    border-radius: 5px;
+}
+
+/* 3. Football Field with Tic-Tac-Toe overlay */
+.football-wrapper {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.football-field {
+    display: block;
+    filter: saturate(120%) brightness(105%);
+}
+
+.tic-tac-toe-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.8));
+}
+
+/* 4. Penguins - Black and white with border and shadow */
+.penguins {
+    filter: grayscale(100%) contrast(130%);
+    border: 4px solid #000;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+/* 5. Seagull - Blur with vignette effect using box-shadow */
+.seagull-wrapper {
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.6), 5px 5px 15px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+.seagull {
+    filter: blur(1px) brightness(110%);
+    display: block;
+}
+
+/* 6. Theater Stage - Gradient overlay with shadow */
+.theater-wrapper {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.theater-stage {
+    display: block;
+    filter: contrast(110%) saturate(90%);
+}
+
+.theater-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.6) 100%);
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+}
